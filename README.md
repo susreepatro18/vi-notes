@@ -24,12 +24,13 @@ Human writing is naturally erratic and iterative. Vi-Notes captures:
 ```text
 /Project
 ├── /frontend    # React + TypeScript + Vite
-├── /server      # Node.js + Express + MongoDB
+├── /backend     # Node.js + Express + MongoDB
+├── /docs        # Implementation Plans & Walkthroughs
 └── README.md
 ```
 
 ## 🛠 Tech Stack
-- **Frontend**: React, TypeScript, Vite, Vanilla CSS.
+- **Frontend**: React, TypeScript, Vite, lucide-react, jspdf.
 - **Backend**: Node.js, Express, Mongoose.
 - **Database**: MongoDB.
 
@@ -46,7 +47,7 @@ git clone https://github.com/susreepatro18/vi-notes.git
 cd vi-notes
 
 # Setup Backend
-cd server
+cd backend
 npm install
 node index.js
 
