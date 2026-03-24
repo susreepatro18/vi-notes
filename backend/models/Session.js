@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
 
 const KeystrokeSchema = new mongoose.Schema({
-  key: String,
-  pressTime: Number,
-  releaseTime: Number,
-  type: { type: String, enum: ['keydown', 'keyup'] }
+  down: Number,
+  up: Number
 });
 
 const PasteSchema = new mongoose.Schema({

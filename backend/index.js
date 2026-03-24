@@ -23,7 +23,6 @@ app.post('/api/sessions', async (req, res) => {
   try {
     const { userId, content, keystrokes, pastes } = req.body;
     
-    // Perform real-time statistical analysis
     const analysis = analyzeKeystrokes(keystrokes);
 
     const newSession = new Session({
@@ -31,7 +30,7 @@ app.post('/api/sessions', async (req, res) => {
       content,
       keystrokes,
       pastes,
-      analysis // Store the analysis results
+      analysis
     });
     const savedSession = await newSession.save();
     res.status(201).json(savedSession);
